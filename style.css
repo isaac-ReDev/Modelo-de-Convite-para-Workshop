@@ -26,7 +26,6 @@ header{
 
 main{
     width: 100vw;
-    height: 100vh;
     background: rgb(46,32,125);
     background: linear-gradient(339deg, rgba(46,32,125,1) 0%, rgba(7,4,77,1) 17%, rgba(5,2,65,1) 100%); 
     padding-top: 100px;
@@ -90,10 +89,11 @@ main{
 
 .msg{
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
     width: 500px;
+    height: 200px;
     padding-top: 10px;
     padding-bottom: 20px;
     color: white;
@@ -170,11 +170,20 @@ main{
 .sec-questions{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
     width: 100vw;
-    background-color: aquamarine;
+    color: rgb(77, 5, 77);
+    padding-top: 20px;
+    margin-top: 200px;
+    background: white;
+}
+
+.tittle-sec-quest{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .questions{
@@ -182,5 +191,81 @@ main{
     flex-direction: column;
     gap: 30px;
     width: 90vw;
-    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.questions:hover{
+    border-radius: 20px;
+    box-shadow: 3px -3px 16px 8px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 3px -3px 16px 8px rgba(0,0,0,0.44);
+    -moz-box-shadow: 3px -3px 16px 8px rgba(0,0,0,0.44);
+}
+
+.content-question{
+    margin-top: 20px;
+
+}
+
+/* part about the author */
+
+.who-are-we{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100vw;
+    height: 700px;
+    background-color: black;
+    margin-top: 50px;
+}
+ 
+.tittle-sec {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    border-bottom: white 1px solid;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 25px;
+}
+
+.author:nth-child(2){
+    flex-direction: row-reverse;
+
+}
+
+.img-author{
+    display: flex;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+}
+
+.img-author img{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: white 1px  solid;
+}
+
+.name-author{
+    font-size: 20px;
+
+}   
+
+.about-author{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.txt-about-author{
+    margin-bottom: 10px;
 }
