@@ -4,7 +4,7 @@ const h3 = document.querySelector('[data-js="typing-3"]');
 
 const hs = [h1,h2,h3];
 const message = ['>SEMANA INGLES PARA DEVS_', 'De 04 a 10 de Julho de 2022', '>Um evento gratuito focado em programadores que querem aprender inglês para mudar de nível na carreira.'];
-const intervalTypingText = setInterval(typingText, 100);
+const intervalTypingText = setInterval(typingText, 90);
 
 
 let messageIndex = 0;
@@ -18,7 +18,6 @@ function typingText(){
     currentMessage       = message[messageIndex];
     currentCharacters    = currentMessage.slice(0, charactersIndex++);
     hs[i].innerHTML     = currentCharacters;
-    console.log('dss')
     if(currentCharacters.length === currentMessage.length ){
         messageIndex++;
         charactersIndex = 0;
@@ -27,7 +26,6 @@ function typingText(){
 }
 
 setTimeout(function(){
-    console.log('sstoped');
     clearInterval(intervalTypingText)
 },20000)
 
