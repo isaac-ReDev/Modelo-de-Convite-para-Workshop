@@ -26,7 +26,7 @@ header{
 
 main{
     width: 100vw;
-    background: rgb(46,32,125);
+    background: black;
     background: linear-gradient(339deg, rgba(46,32,125,1) 0%, rgba(7,4,77,1) 17%, rgba(5,2,65,1) 100%); 
     padding-top: 100px;
 
@@ -173,8 +173,9 @@ main{
     align-items: center;
     gap: 80px;
     width: 100vw;
-    color: rgb(77, 5, 77);
+    color: rgb(97, 4, 97);
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 200px;
     background: white;
 }
@@ -182,8 +183,29 @@ main{
 .tittle-sec-quest{
     display: flex;
     justify-content: flex-start;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(81, 3, 83);
+}
+
+
+.date-question{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.title-quest{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+
+}
+
+.content-question{
+    margin-top: 20px;
+    font-weight: 100px;
+    font-size: 20px;
+    color: black;
 }
 
 .questions{
@@ -203,10 +225,7 @@ main{
     -moz-box-shadow: 3px -3px 16px 8px rgba(0,0,0,0.44);
 }
 
-.content-question{
-    margin-top: 20px;
 
-}
 
 /* part about the author */
 
@@ -268,4 +287,18 @@ main{
 
 .txt-about-author{
     margin-bottom: 10px;
+}
+
+/* criando o estilo do foother*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    background: white;
+    color: rgb(74, 26, 74);
+    padding-top: 20px;
 }
